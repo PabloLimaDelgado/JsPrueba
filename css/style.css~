@@ -1,0 +1,61 @@
+@charset "UTF-8";
+header {
+  background-color: #4A4A4A;
+}
+header h1 {
+  color: #e4ffc6;
+  margin-left: 5%;
+  font-family: "Sigmar", cursive;
+  font-size: 25px;
+}
+
+main {
+  background-image: url(../Vinilo\ económicos\ para\ decoración\,\ Decoravinilos_\ Vinilos\ baratos\ Murcia.png);
+  background-repeat: no-repeat;
+}
+main form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+}
+
+footer {
+  background-color: #4A4A4A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .div-logos {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: flex-start;
+  margin: 1%;
+  gap: 3%;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5em;
+  font-weight: lighter;
+}
+footer .div-enlaces {
+  display: grid;
+  width: 50%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+}
+footer .div-enlaces a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  margin: 1%;
+}
+footer .div-enlaces a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css~.map */
