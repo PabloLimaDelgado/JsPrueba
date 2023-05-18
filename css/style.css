@@ -111,6 +111,16 @@
 .html-form body main section form .registro input:focus {
   outline: none;
 }
+.html-form body main section form .registro button {
+  background-color: #576c89;
+  color: white;
+  border: white inset 1px;
+  border-radius: 5%;
+  padding: 4px;
+  padding-right: 15%;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+}
 .html-form body main section form .botones {
   display: flex;
   align-items: center;
@@ -124,6 +134,9 @@
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   font-size: 20px;
+}
+.html-form body main .disable {
+  display: none;
 }
 .html-form body footer {
   background-color: rgba(74, 74, 74, 0.9);
