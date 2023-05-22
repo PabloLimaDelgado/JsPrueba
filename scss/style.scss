@@ -87,6 +87,15 @@
                         input:focus {
                             outline: none;
                         }
+                        p{
+                            color: white;
+                            padding-left: 10%;
+                            padding-right: 10%;
+                            border-radius: 5%;
+                            background-color: red;
+                            font-size: 15px;
+                            font-weight: 600;
+                        }
                     }
 
                     .inicio-disable{
@@ -132,6 +141,16 @@
                             font-family: "Nunito", sans-serif;
                             font-size: 15px;
                         }
+
+                        p{
+                            color: white;
+                            padding-left: 10%;
+                            padding-right: 10%;
+                            border-radius: 5%;
+                            background-color: red;
+                            font-size: 15px;
+                            font-weight: 600;
+                        }
                     }
         
                     .botones{
@@ -148,14 +167,19 @@
                             font-weight: 600;
                             font-size: 20px;
                         }
+                        .disable{
+                            display: none ;
+                        }
+                    }
+                    .disable{
+                        display: none ;
                     }
                 }
             }
 
             .disable{
-                display: none ;
+                display: none;
             }
-
         }
         
         footer{

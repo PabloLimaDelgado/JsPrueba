@@ -1,6 +1,7 @@
-const registrase = document.getElementById('btnRegistro');
+const registrase = document.getElementById('btnRegistro')
 const entrar = document.getElementById('btnInicioSesion')
-const formularioInscripcion = document.querySelector('.inicio');
+const formularioInscripcion = document.querySelector('.inicio')
+const btnDos = document.querySelector('.botones');
 const seccionInicioPag = document.getElementById('seccion-inicio-pagina')
 const formularioRegistro = document.getElementById('form-registro')
 const usuarioRegistroNombre = document.getElementById('inputUsuarioR')
@@ -44,13 +45,6 @@ function crearUsuario(user, password, tarjeta) {
 
 const btnRegistro = document.getElementById('enviar-reg')
 
-btnRegistro.addEventListener('click', () => {
-    const rellenarCampos = document.getElementById('texto-fallido')
-    if(usuarioRegistroNombre.value == null || usuarioRegistroContraseña.value == null || usuarioTarjetaNum.value == null || usuarioTarjetaNombre.value == null || usuarioTarjetaVencimiento.value == null || usuarioTrjetaCodigo.value == null){
-        rellenarCampos.innerText = `Por favor complete todos los campos`
-    }
-    seccionInicioPag.classList.add('disable')
-})
 btnRegistro.addEventListener('click', programaPrincipal)
 
 function programaPrincipal(e){
@@ -62,9 +56,15 @@ function programaPrincipal(e){
     const cardVencimiento = usuarioTarjetaVencimiento.value;
     const cardCode = usuarioTrjetaCodigo.value;
 
-    let tarjeta = crearTarjeta(cardNum, cardName, cardVencimiento, cardCode);
-    let usuario = crearUsuario(user, password, tarjeta);
-
+    const rellenarCampos = document.getElementById('texto-fallido')
+    if(usuarioRegistroNombre.value == "" || usuarioRegistroContraseña.value == "" || usuarioTarjetaNum.value == "" || usuarioTarjetaNombre.value == "" || usuarioTarjetaVencimiento.value == "" || usuarioTrjetaCodigo.value == ""){
+        rellenarCampos.innerHTML = `<i class="fa-solid fa-triangle-exclamation"></i> Complete todos los campos`
+    }
+    else{
+        let tarjeta = crearTarjeta(cardNum, cardName, cardVencimiento, cardCode);
+        let usuario = crearUsuario(user, password, tarjeta);
+        seccionInicioPag.classList.add('disable')
+    }
 }
 
 registrase.addEventListener('click', (event) => {
@@ -72,10 +72,29 @@ registrase.addEventListener('click', (event) => {
     formularioInscripcion.classList.add('inicio-disable')
     formularioRegistro.classList.remove('inicio-disable')
     formularioRegistro.classList.add('registro')
+    btnDos.classList.add('disable')
 });
 
 
 entrar.addEventListener('click', (event) => {
     event.preventDefault()
-    seccionInicioPag.classList.add('disable')
+    let userFound = false
+    const userA = document.getElementById('usuarioEntrada')
+    const passwordA = document.getElementById('contraseñaEntrada')
+    const rellenarCampos = document.getElementById('texto-fallido-ingreso')
+
+    arregloUsuario.forEach( (user) =>{
+        if(userA.value == user.nombre && passwordA.value == user.contraseña){
+            userFound = true
+        }
+    })
+
+    if(userFound == false){
+        rellenarCampos.innerHTML = `<i class="fa-solid fa-triangle-exclamation"></i> Usuario o contraseña incorrectos`
+    }
+    else{
+        seccionInicioPag.classList.add('disable')
+    }
 })
+
+
