@@ -22,36 +22,49 @@
     </header>
 
     <main>
-      <section id="seccion-inicio-pagina">
-        <form>
+      <section class="main-config">
 
+        <div class="medioPago-cerrarSesion">
           <div>
-            <h1>Inicio sesión</h1>
+            <h1>Ajuste Usuario</h1>
           </div>
-          
-          <section class="inicio">
-            <input type="text" placeholder="Usuario" id="usuarioEntrada">
-            <input type="text" placeholder="Contraseña" id="contraseñaEntrada">
-            <p id="texto-fallido-ingreso"></p>
-          </section>
   
-          <section class="inicio-disable" id="form-registro">
-            <input type="text" placeholder="Nombre de usuario" id="inputUsuarioR">
-            <input type="text" placeholder="Contraseña" id="inputContraseñaR">
-            <input type="text" placeholder="Número tarjeta" id="numTarjetaR">
-            <input type="text" placeholder="Nombre tarjeta" id="nombreTarjetaR">
-            <input type="text" placeholder="Vencimiento tarjeta" id="vencimientoTarjetaR">
-            <input type="text" placeholder="Codigo de seguridad" id="codigoTarjetaR">
-            <p id="texto-fallido"></p>
-            <button id="enviar-reg">Enviar</button>
-          </section>
+          <section class="primer-ajuste-usuario">
+              <div>
+                <h3>Medios de pago</h3>
+                <button id="btnMedioPago">click aqui</button>
+              </div>
+    
+              <div>
+                <h3>Cerrar Sesión</h3>
+                <button id="btnCerrarSesion">click aqui</button>
+              </div>
+            </section>
+        </div>
 
-          <section class="botones">
-            <button id="btnInicioSesion">Iniciar sesión</button>
-            <button id="btnRegistro">Registrarse</button>
-          </section>
+        <div class="disable-MPCS" id="medio-pago">
+          <div>
+            <h1>Medios de pago</h1>
+          </div>
 
-        </form>
+          <section class="opcionesTarjeta">
+            <div>
+              <h3>Añadir Tarjeta</h3>
+              <button>click aqui</button>
+            </div>
+  
+            <div>
+              <h3>Mirar tarjetas</h3>
+              <button>click aqui</button>
+            </div>
+  
+            <div>
+              <h3>Quitar tarjeta</h3>
+              <button>click aqui</button>
+            </div>
+          </section>
+        </div>
+
       </section>
     </main>
 

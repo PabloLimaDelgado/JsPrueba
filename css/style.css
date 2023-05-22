@@ -25,141 +25,129 @@
 }
 .html-form body main {
   height: 74.2%;
-  display: flex;
-  align-items: center;
 }
-.html-form body main section {
-  width: 100%;
+.html-form body main .main-config {
   display: flex;
   justify-content: center;
-  padding: 10px;
+  padding: 2%;
+  align-items: start;
 }
-.html-form body main section form {
-  border: transparent solid 1px;
-  border-radius: 5%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 30px;
-  width: 30%;
-  background-color: rgba(74, 74, 74, 0.95);
-}
-.html-form body main section form div {
-  width: 100%;
-  margin: 5px;
-}
-.html-form body main section form div h1 {
+.html-form body main .main-config div h1 {
   color: #e4ffc6;
   margin-left: 5%;
   font-family: "Sigmar", cursive;
   font-size: 25px;
   margin-bottom: 0px;
 }
-.html-form body main section form .inicio {
+.html-form body main .main-config .medioPago-cerrarSesion {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  border: 2px solid black;
   flex-direction: column;
-  gap: 10px;
-}
-.html-form body main section form .inicio input {
-  outline: none;
-  background-color: #576c89;
-  border: #576c89 solid 1px;
+  border: transparent solid 1px;
   border-radius: 5%;
-  padding: 4px;
-  padding-right: 15%;
-  color: #e4ffc6;
-  font-family: "Nunito", sans-serif;
-  font-size: 15px;
+  gap: 25px;
+  background-color: rgba(74, 74, 74, 0.95);
+  padding: 1%;
+  width: 32%;
 }
-.html-form body main section form .inicio input::placeholder {
-  border: 0px;
-  color: white;
-  font-family: "Nunito", sans-serif;
-}
-.html-form body main section form .inicio input:focus {
-  outline: none;
-}
-.html-form body main section form .inicio p {
-  color: white;
-  padding-left: 10%;
-  padding-right: 10%;
-  border-radius: 5%;
-  background-color: red;
-  font-size: 15px;
-  font-weight: 600;
-}
-.html-form body main section form .inicio-disable {
-  display: none;
-}
-.html-form body main section form .registro {
+.html-form body main .main-config .medioPago-cerrarSesion .primer-ajuste-usuario {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 10px;
-}
-.html-form body main section form .registro input {
-  outline: none;
-  background-color: #576c89;
-  border: #576c89 solid 1px;
-  border-radius: 5%;
-  padding: 4px;
-  padding-right: 15%;
-  color: #e4ffc6;
-  font-family: "Nunito", sans-serif;
-  font-size: 15px;
-}
-.html-form body main section form .registro input::placeholder {
-  border: 0px;
-  color: white;
-  font-family: "Nunito", sans-serif;
-}
-.html-form body main section form .registro input:focus {
-  outline: none;
-}
-.html-form body main section form .registro button {
-  background-color: #576c89;
-  color: white;
-  border: white inset 1px;
-  border-radius: 5%;
-  padding: 4px;
-  padding-right: 15%;
-  font-family: "Nunito", sans-serif;
-  font-size: 15px;
-}
-.html-form body main section form .registro p {
-  color: white;
-  padding-left: 10%;
-  padding-right: 10%;
-  border-radius: 5%;
-  background-color: red;
-  font-size: 15px;
-  font-weight: 600;
-}
-.html-form body main section form .botones {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: row;
-  gap: 10px;
+  gap: 4%;
+  white-space: nowrap;
+  padding: 2%;
+  justify-content: center;
 }
-.html-form body main section form .botones button {
-  color: #576c89;
-  background-color: #e4ffc6;
+.html-form body main .main-config .medioPago-cerrarSesion .primer-ajuste-usuario div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #576c89;
+  border-radius: 5%;
+  padding: 10px;
+}
+.html-form body main .main-config .medioPago-cerrarSesion .primer-ajuste-usuario div h3 {
   font-family: "Nunito", sans-serif;
-  font-weight: 600;
   font-size: 20px;
+  color: #e4ffc6;
 }
-.html-form body main section form .botones .disable {
-  display: none;
+.html-form body main .main-config .medioPago-cerrarSesion .primer-ajuste-usuario div button {
+  background-color: rgb(74, 74, 74);
+  border: #576c89 solid 1px;
+  border-radius: 12%;
+  color: #e4ffc6;
 }
-.html-form body main section form .disable {
-  display: none;
+.html-form body main .main-config .medioPago-cerrarSesion .primer-ajuste-usuario div:hover {
+  background-color: #e4ffc6;
 }
-.html-form body main .disable {
+.html-form body main .main-config .medioPago-cerrarSesion .primer-ajuste-usuario div:hover h3 {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  color: #576c89;
+  font-weight: 600;
+}
+.html-form body main .main-config .medioPago-cerrarSesion .primer-ajuste-usuario div:hover button {
+  background-color: rgb(74, 74, 74);
+  border: #576c89 solid 1px;
+  border-radius: 12%;
+  color: #e4ffc6;
+}
+.html-form body main .main-config .medioPago {
+  display: flex;
+  border: 2px solid black;
+  flex-direction: column;
+  border: transparent solid 1px;
+  border-radius: 5%;
+  gap: 25px;
+  background-color: rgba(74, 74, 74, 0.95);
+  padding: 1%;
+  width: 37%;
+}
+.html-form body main .main-config .medioPago .opcionesTarjeta {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 4%;
+  white-space: nowrap;
+  padding: 2%;
+  justify-content: center;
+}
+.html-form body main .main-config .medioPago .opcionesTarjeta div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #576c89;
+  border-radius: 5%;
+  padding: 10px;
+}
+.html-form body main .main-config .medioPago .opcionesTarjeta div h3 {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  color: #e4ffc6;
+}
+.html-form body main .main-config .medioPago .opcionesTarjeta div button {
+  background-color: rgb(74, 74, 74);
+  border: #576c89 solid 1px;
+  border-radius: 12%;
+  color: #e4ffc6;
+}
+.html-form body main .main-config .medioPago .opcionesTarjeta div:hover {
+  background-color: #e4ffc6;
+}
+.html-form body main .main-config .medioPago .opcionesTarjeta div:hover h3 {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  color: #576c89;
+  font-weight: 600;
+}
+.html-form body main .main-config .medioPago .opcionesTarjeta div:hover button {
+  background-color: rgb(74, 74, 74);
+  border: #576c89 solid 1px;
+  border-radius: 12%;
+  color: #e4ffc6;
+}
+.html-form body main .main-config .disable-MPCS {
   display: none;
 }
 .html-form body footer {
